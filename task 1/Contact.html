@@ -1,0 +1,264 @@
+<!DOCKTYPE html>
+<html>
+
+<head>
+    <meta Charset="utf-8" />
+    <title>Kentucky.State.gov</title>
+    <link rel="icon" href="/Projects/task 1/Seal_of_Kentucky.jpg" />
+    <link rel="stylesheet" href="style.css" />
+
+    <style>       
+        .imageContainer {
+            position: relative;
+         
+        }
+
+            .imageContainer h1 {
+                position: absolute;
+                text-align: center;
+                align-items: center;
+                
+            }
+
+        section {
+            width: 60%;
+            height: 100vh;
+            margin: 20%;
+            margin-top: 10%;
+            box-shadow: 3px 3px 5px;
+            background-color: #F0F8FF;
+        }
+
+      
+
+        .socialMedia {
+            float: right;
+            width: 155px;
+            border: 3px solid purple;
+            border-radius: 15px;
+            background-color: aqua;
+            border-collapse: collapse;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: right;
+            padding: 10px;
+            margin: 10px;
+            margin-left: 0;
+        
+        }
+
+            .socialMedia h3 {
+                border: 3px solid purple;
+                border-radius: 20px;
+                background-color: #f90;
+                text-align: center;
+            }
+
+
+        /* Style the table */
+        table {
+            float: right;
+            width: 10%;
+            background-color: black;
+            border-collapse: collapse;
+        }
+
+        /* Style the table cells */
+        td {
+            border: 0; 
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Style the social media icons */
+        .icon {
+            width: 50px;
+            height: 50px;
+        }
+
+        .follow {
+            float: right;
+            border: 3px solid purple;
+            border-radius: 20px;
+            background-color: #f90
+        }
+
+        .ContactUs {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .message {
+            width: 50%;
+            height: 100vh;
+            align-items: center;
+            justify-items: center;
+        }
+
+        form input {
+            display: block;
+            width: 90%;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .description {
+            display: block;
+            width: 90%;
+            margin: 10px;
+            padding: 10px;
+        }
+
+            .description label {
+                display: block;
+                margin-bottom: 5px;
+            }
+
+        .contactinfo1 {
+            width: 50%;
+            height: 40vh;
+            border-left: 3px solid black;
+        }
+
+        .box {
+            margin-left: 15px;
+        }
+
+      
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="logo">
+            <a href="http://localhost:58600/Projects/task%201/index.html"><img src="Seal_of_Kentucky.jpg" alt="Kentucky Commonwealth Logo" style="width:100px;" /></a>
+
+        </div>
+        <div class=" nav home">
+            <a href="index.html">Home</a>
+        </div>
+        <div class="nav one">
+            <a href="/Projects/task 1/Frankfort.html">Frankfort</a>
+        </div>
+
+        <div class="nav two">
+            <a href="/Projects/task 1/Louisville.html">Louisville</a>
+
+        </div>
+        <div class="nav three">
+            <a href="/Projects/task 1/Lexington.html">Lexington</a>
+
+        </div>
+
+        <div class="nav four">
+            <search>
+                <form>
+                    <input placeholder="search news, job, events"/>
+                    <button title="Search job,news,etc." aria-label="Search Kentucky.State.gov">Search</button>
+                </form>
+            </search>
+
+
+
+        </div>
+
+    </div>
+
+    <div class="imageContainer">
+        <h1>Contact Us</h1>
+        <img style="width:100%; height:60vh;" src="Contact Us.jpg" alt=" image showing contact us" />
+
+    </div>
+
+    <section>
+        <div class="ContactUs">
+            <div class="message">
+                <h1>Contact Customer Support</h1>
+                <p>Tell us how we can help.</p>
+                <form>
+                    <label for="subject">*Subject</label><br />
+                    <input type="text" id="subject" name="subject" />
+                    <div class="description">
+                        <label for="description">*Description</label>
+                        <textarea id="myText" contenteditable></textarea>
+                        <script>
+                            // Get the height of the text area
+                            var height = document.getElementById("myText").offsetHeight;
+                            // Set it as the text area's height
+                            document.getElementById("myText").style.height = height + "px";
+                        </script>
+                    </div>
+
+                    <label for="email">*Email</label>
+                    <input type="email" name="email" placeholder="Enter email:peter@outlook.com" />
+                </form>
+                <button type="button">Submit</button>
+
+            </div>
+
+            <div class="contactinfo1">
+                <div class="box">
+                    <h1>Contact Kentucky.gov</h1>
+
+                    <p>Kentucky.gov/kentucky Interactive, LLC</p>
+                    <p>229 West main Street Suite 400</p>
+                    <p>Frankfort, KY 40601</p><br />
+                    <p>Phone: (502) 875-3733</p>
+                    <p>Fax: (502) 875-3722</p>
+                    <p>Email: support@kentucky.gov</p>
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="socialMedia">
+        <h3>Follow Us</h3>
+
+
+
+        <table>
+            <tr>
+                <td><a href="https://www.linkedin.com/in/prameshwor-rijal"><img style="width:35px; height:30px;" src="linkedin.png" alt="LinkedIn" class="icon"></a></td>
+                <td><a href="https://www.facebook.com/parameshwor.rijal/"><img style="width:35px; height:30px;" src="facebook.png" alt="Facebook" class="icon"></a></td>
+                <td><a href="https://twitter.com/Unbeatable_PR"><img style="width:35px; height:30px;" src="twitter.png" alt="Twitter" class="icon"></a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.instagram.com/parameshwor.rijal/"><img style="width:35px; height:30px;" src="instagram.png" alt="Instagram" class="icon"></a></td>
+                <td><a href="https://www.youtube.com/channel/UC38wcArBLl8mCFIk4z9OaZg"><img style="width:35px; height:30px;" src="youtube.png" alt="YouTube" class="icon"></a></td>
+                <td><a href="https://account.microsoft.com/profile/?refd=outlook.live.com"><img style="width:35px; height:30px;" src="email.png" alt="Email" class="icon"></a></td>
+            </tr>
+        </table>
+
+    </div>
+
+    <footer>
+        <div class="contact">
+            <div class="contactinfo">
+                <a href="/Projects/task 1/About.html">About</a>
+                <a href="/Projects/task 1/Contact.html">Contact Us</a>
+                <a href="/Projects/task 1/Register.html">Register</a>
+            </div>
+
+            <p>&copy;2024 Kentucky. The Kentucky name and logos are registered trademarks of Kentucky.</p>
+
+
+
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

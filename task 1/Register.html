@@ -1,0 +1,263 @@
+<!DOCKTYPE html>
+<html>
+
+<head>
+    <meta Charset="utf-8" />
+    <title>Kentucky.State.gov</title>
+    <link rel="icon" href="/Projects/task 1/Seal_of_Kentucky.jpg" />
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+        section {
+            width: 60%;
+            height: 100vh;
+            margin: 20%;
+            margin-top: 10%;
+            box-shadow: 3px 3px 5px;
+            background-color: #F0F8FF;
+        }
+
+        .socialMedia {
+            float: right;
+            width: 155px;
+            border: 3px solid purple;
+            border-radius: 15px;
+            background-color: aqua;
+            border-collapse: collapse;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: right;
+            padding: 10px;
+            margin: 10px;
+            margin-left: 0;
+          
+        }
+
+            .socialMedia h3 {
+                border: 3px solid purple;
+                border-radius: 20px;
+                background-color: #f90;
+                text-align: center;
+            }
+
+
+        /* Style the table */
+        table {
+            float: right;
+            width: 10%;
+            background-color: black;
+            border-collapse: collapse;
+        }
+
+        /* Style the table cells */
+        td {
+            border: 0; 
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Style the social media icons */
+        .icon {
+            width: 50px;
+            height: 50px;
+        }
+
+        .follow {
+            float: right;
+            border: 3px solid purple;
+            border-radius: 20px;
+            background-color: #f90
+        }
+
+        .AccountCreation {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .Registration {
+            width: 50%;
+            height: 100vh;
+            align-items: center;
+            justify-items: center;
+            margin-left: 250px;
+        }
+
+        form input {
+            display: block;
+            width: 90%;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .description {
+            display: block;
+            width: 90%;
+            margin: 10px;
+            padding: 10px;
+        }
+
+            .description label {
+                display: block;
+                margin-bottom: 5px;
+            }
+
+        
+
+        .box {
+            margin-left: 15px;
+        }
+
+        footer {
+            clear: both;
+            text-align: center;
+            background-color: #000000;
+            margin-top: 10px;
+            color: #FFFFFF
+        }
+    </style>
+
+    <script>
+        // JavaScript function to verify email addresses
+        function verifyEmail() {
+            var email1 = document.getElementById('email').value;
+            var email2 = document.getElementById('confirmEmail').value;
+
+            if (email1 !== email2) {
+                alert('Email addresses do not match. Please enter the same email address for verification.');
+                document.getElementById('confirmEmail').focus();
+                return false;
+            }
+            return true;
+        }
+
+        // JavaScript function to verify passwords
+        function verifyPassword() {
+            var password1 = document.getElementById('password').value;
+            var password2 = document.getElementById('confirmPassword').value;
+
+            if (password1 !== password2) {
+                alert('Passwords do not match. Please enter the same password for verification.');
+                document.getElementById('confirmPassword').focus();
+                return false;
+            }
+            return true;
+        }
+    </script>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="logo">
+            <a href="http://localhost:58600/Projects/task%201/index.html"><img src="Seal_of_Kentucky.jpg" alt="Kentucky Commonwealth Logo" style="width:100px;" /></a>
+
+        </div>
+        <div class=" nav home">
+            <a href="index.html">Home</a>
+        </div>
+        <div class="nav one">
+            <a href="/Projects/task 1/Frankfort.html">Frankfort</a>
+        </div>
+
+        <div class="nav two">
+            <a href="/Projects/task 1/Louisville.html">Louisville</a>
+
+        </div>
+        <div class="nav three">
+            <a href="/Projects/task 1/Lexington.html">Lexington</a>
+
+        </div>
+
+        <div class="nav four">
+            <search>
+                <form>
+                    <input placeholder="search news, job, events" />
+                    <button title="Search job,news,etc." aria-label="Search Kentucky.State.gov">Search</button>
+                </form>
+            </search>
+        </div>
+    </div>
+
+    <img style="height:60vh; width:100%;" src="Lexington.jpg" alt="image of Lexington" />
+    <section>
+        <div class="AccountCreation">
+            <div class="Registration">
+                <h1>Kentucky.gov New User Registration</h1>
+                <p>Please provide the following information to create a new user account.</p>
+                <form onsubmit="return verifyEmail() && verifyPassword()">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" placeholder="Enter your first name" required><br>
+
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" placeholder="Enter your last name" required><br>
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone number" required><br>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" placeholder="Enter your email address" required><br>
+
+                    <label for="confirmEmail">Confirm Email:</label>
+                    <input type="email" id="confirmEmail" placeholder="Re-enter your email address for verification" required><br>
+
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" placeholder="Choose a username" required><br>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" placeholder="Enter a password (at least 8 characters with numbers, letters, and one symbol)" required pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$"><br>
+
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" id="confirmPassword" placeholder="Re-enter your password for verification" required><br>
+
+                    <input type="submit" value="Create Account">
+                </form>
+
+            </div>
+            </div>
+
+    </section>
+
+    <div class="socialMedia">
+        <h3>Follow Us</h3>
+
+
+
+        <table>
+            <tr>
+                <td><a href="https://www.linkedin.com/in/prameshwor-rijal"><img style="width:35px; height:30px;" src="linkedin.png" alt="LinkedIn" class="icon"></a></td>
+                <td><a href="https://www.facebook.com/parameshwor.rijal/"><img style="width:35px; height:30px;" src="facebook.png" alt="Facebook" class="icon"></a></td>
+                <td><a href="https://twitter.com/Unbeatable_PR"><img style="width:35px; height:30px;" src="twitter.png" alt="Twitter" class="icon"></a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.instagram.com/parameshwor.rijal/"><img style="width:35px; height:30px;" src="instagram.png" alt="Instagram" class="icon"></a></td>
+                <td><a href="https://www.youtube.com/channel/UC38wcArBLl8mCFIk4z9OaZg"><img style="width:35px; height:30px;" src="youtube.png" alt="YouTube" class="icon"></a></td>
+                <td><a href="https://account.microsoft.com/profile/?refd=outlook.live.com"><img style="width:35px; height:30px;" src="email.png" alt="Email" class="icon"></a></td>
+            </tr>
+        </table>
+
+    </div>
+
+    <footer>
+        <div class="contact">
+            <div class="contactinfo">
+                <a href="/Projects/task 1/About.html">About</a>
+                <a href="/Projects/task 1/Contact.html">Contact Us</a>
+                <a href="/Projects/task 1/Register.html">Register</a>
+            </div>
+
+            <p>&copy;2024 Kentucky. The Kentucky name and logos are registered trademarks of Kentucky.</p>
+
+
+
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
